@@ -58,8 +58,8 @@ public class Library {
     /**
      * This method shows a list of all the Books in our library.
      */
-    public void listOfAvailableBooks(){
-        for (Book libraryBook:books) {
+    public void listOfAvailableBooks() {
+        for (Book libraryBook : books) {
             System.out.println(libraryBook);
         }
     }
