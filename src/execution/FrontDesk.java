@@ -48,6 +48,18 @@ public class FrontDesk {
                     scanner.nextLine();
                     bookName = scanner.nextLine();
                     student.addBook(bookName);
+                    System.out.println();
+                    break;
+                case RETURN_BOOK:
+                    System.out.println("Enter your name:");
+                    studentName = scanner.nextLine();
+                    System.out.println("Enter your university roll number:");
+                    studentUniversityRollNumber = scanner.nextLong();
+                    System.out.println("Enter the name of the book that you want to return: ");
+                    scanner.nextLine();
+                    bookName = scanner.nextLine();
+                    student.doReturn(bookName);
+                    System.out.println();
                     break;
             }
         }
