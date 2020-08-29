@@ -66,6 +66,14 @@ public class Book {
     public void setBookNumber(String bookNumber) {
         this.bookNumber = bookNumber;
     }
+
+    public int getBookId() {
+        return bookId;
+    }
+
+    public void setBookId(int bookId) {
+        this.bookId = bookId;
+    }
 }
 
 
