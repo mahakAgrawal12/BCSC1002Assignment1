@@ -51,6 +51,14 @@ public class Book {
         this.bookName = bookName;
     }
 
+    public String getBookAuthor() {
+        return bookAuthor;
+    }
+
+    public void setBookAuthor(String bookAuthor) {
+        this.bookAuthor = bookAuthor;
+    }
+
 }
 
 
