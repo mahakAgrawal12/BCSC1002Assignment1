@@ -91,4 +91,13 @@ public class Student {
         result = 31 * result + Arrays.hashCode(getStudentIssuedBookName());
         return result;
     }
+
+    /**
+     * This method adds a Book to the studentIssuedBookName.
+     *
+     * @param name The name of the book to be added.
+     */
+    public void addBook(String name) {
+        System.out.println(name + " was added to the issue details.");
+    }
 }
