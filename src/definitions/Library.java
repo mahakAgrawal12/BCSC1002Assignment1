@@ -49,9 +49,18 @@ public class Library {
         return Arrays.equals(getBooks(), library.getBooks());
     }
 
-    //the hashCode() method
+    //The hashCode() method
     @Override
     public int hashCode() {
         return Arrays.hashCode(getBooks());
+    }
+
+    /**
+     * This method shows a list of all the Books in our library.
+     */
+    public void listOfAvailableBooks(){
+        for (Book libraryBook:books) {
+            System.out.println(libraryBook);
+        }
     }
 }
