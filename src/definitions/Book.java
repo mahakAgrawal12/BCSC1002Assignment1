@@ -13,6 +13,7 @@ public class Book {
     private String bookNumber;
     private int bookId;
 
+    //constructors
     public Book() {
         this.bookName = "Python";
         this.bookAuthor = "Harsh Bhasin";
@@ -43,6 +44,7 @@ public class Book {
         this.bookNumber = "66te3j878yu34";
     }
 
+    //getterrs and setters for the private fields
     public String getBookName() {
         return bookName;
     }
@@ -74,6 +76,17 @@ public class Book {
     public void setBookId(int bookId) {
         this.bookId = bookId;
     }
+
+    //the toString() method
+    @Override
+    public String toString() {
+        return "Book{" +
+                "bookName='" + bookName + '\'' +
+                ", bookAuthor='" + bookAuthor + '\'' +
+                ", bookNumber='" + bookNumber + '\'' +
+                '}';
+    }
+
 }
 
 
