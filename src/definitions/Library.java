@@ -32,11 +32,21 @@ public class Library {
         this.books = books;
     }
 
-    //toString method
+    // The toString() method
     @Override
     public String toString() {
         return "Library{" +
                 "books=" + Arrays.toString(books) +
                 '}';
     }
+
+    //The equals() method
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Library library = (Library) o;
+        return Arrays.equals(getBooks(), library.getBooks());
+    }
+
 }
