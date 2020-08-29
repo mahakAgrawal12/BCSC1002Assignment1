@@ -36,10 +36,11 @@ public class FrontDesk {
             System.out.println("4. Exit.");
             System.out.println("Enter your choice (1..4): ");
             studentInput = scanner.nextByte();
+
             switch (studentInput) {
                 case ADD_BOOK:
                     System.out.println("Enter your name:");
-                    studentName = scanner.nextLine();
+                    studentName = scanner.next();
                     System.out.println("Enter your university roll number:");
                     studentUniversityRollNumber = scanner.nextLong();
                     System.out.println("These are the books currently available in library:");
@@ -52,7 +53,7 @@ public class FrontDesk {
                     break;
                 case RETURN_BOOK:
                     System.out.println("Enter your name:");
-                    studentName = scanner.nextLine();
+                    studentName = scanner.next();
                     System.out.println("Enter your university roll number:");
                     studentUniversityRollNumber = scanner.nextLong();
                     System.out.println("Enter the name of the book that you want to return: ");
@@ -63,12 +64,18 @@ public class FrontDesk {
                     break;
                 case SHOW_ISUUED_BOOK:
                     System.out.println("Enter your name:");
-                    studentName = scanner.nextLine();
+                    studentName = scanner.next();
                     System.out.println("Enter your university roll number:");
                     studentUniversityRollNumber = scanner.nextLong();
                     System.out.print("These are the books that you have issued: ");
                     student.listOfIssuedBook();
                     System.out.println();
                     break;
+                default:
+                    System.out.println("WRONG CHOICE");
+                    break;
             }
-        }
+        } while (studentInput != EXIT);
+        scanner.close();
+    }
+}
