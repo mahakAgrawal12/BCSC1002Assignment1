@@ -12,4 +12,17 @@ public class Student {
     private long studentUniversityRollNumber;
     private int studentIssueedBookNumber;
 
+    //constructors
+    public Student() {
+        studentIssuedBookName = new Book[2];
+        for (int i = 0; i < studentIssuedBookName.length; i++) {
+            studentIssuedBookName[0] = new Book("Book Author", "Book Name");
+            studentIssuedBookName[1] = new Book("Book" + (i + 1));
+        }
+    }
+
+    public Student(String studentName) {
+        this.studentName = "Mahi Bansal";
+    }
+
 }
