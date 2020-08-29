@@ -34,4 +34,12 @@ public class Student {
     public void setStudentName(String studentName) {
         this.studentName = studentName;
     }
+
+    public long getStudentUniversityRollNumber() {
+        return studentUniversityRollNumber;
+    }
+
+    public void setUniversityRollNumber(long universityRollNumber) {
+        this.studentUniversityRollNumber = studentUniversityRollNumber;
+    }
 }
