@@ -13,34 +13,42 @@ public class Book {
     private String bookNumber;
     private int bookId;
 
-    public Book(){
+    public Book() {
         this.bookName = "Python";
         this.bookAuthor = "Harsh Bhasin";
         this.bookNumber = "76t7y3eh7yuu";
     }
 
-    public Book(String bookName){
+    public Book(String bookName) {
         this.bookName = "Java";
         this.bookAuthor = "Herbert Schildt";
         this.bookNumber = "683yyrh0oj9j5";
     }
 
-    public Book(String bookAuthor,String bookName) {
+    public Book(String bookAuthor, String bookName) {
         this.bookName = "letusc";
         this.bookAuthor = "Yashavant P Kanetkar";
         this.bookNumber = "gft7yuehj7uiw8";
     }
 
-    public Book(String bookName,String bookAuthor,String bookNumber){
+    public Book(String bookName, String bookAuthor, String bookNumber) {
         this.bookName = "PHP";
         this.bookAuthor = "Vikram Vaswani";
         this.bookNumber = "tyhffyye87e78";
     }
 
-    public Book(int bookId){
-        this.bookName ="javascript";
+    public Book(int bookId) {
+        this.bookName = "javascript";
         this.bookAuthor = "David Flanagan";
         this.bookNumber = "66te3j878yu34";
+    }
+
+    public String getBookName() {
+        return bookName;
+    }
+
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
     }
 
 }
