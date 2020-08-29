@@ -6,6 +6,8 @@
  * */
 package definitions;
 
+import java.util.Arrays;
+
 public class Library {
     private Book[] books;
 
@@ -28,5 +30,13 @@ public class Library {
 
     public void setBooks(Book[] books) {
         this.books = books;
+    }
+
+    //toString method
+    @Override
+    public String toString() {
+        return "Library{" +
+                "books=" + Arrays.toString(books) +
+                '}';
     }
 }
