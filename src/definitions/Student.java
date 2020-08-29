@@ -83,4 +83,12 @@ public class Student {
                 getStudentIssueedBookNumber() == student.getStudentIssueedBookNumber() &&
                 Objects.equals(getStudentName(), student.getStudentName());
     }
+
+    //The hashCode() method
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(getStudentName(), getStudentUniversityRollNumber(), getStudentIssueedBookNumber());
+        result = 31 * result + Arrays.hashCode(getStudentIssuedBookName());
+        return result;
+    }
 }
