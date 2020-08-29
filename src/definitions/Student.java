@@ -100,4 +100,13 @@ public class Student {
     public void addBook(String name) {
         System.out.println(name + " was added to the issue details.");
     }
+
+    /**
+     * This method returns a book back to the library.
+     *
+     * @param name The name of the book you want to return.
+     */
+    public void doReturn(String name) {
+        System.out.println("Thank you for returning, " + name + ". Hope you liked it!");
+    }
 }
