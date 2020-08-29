@@ -25,4 +25,13 @@ public class Student {
         this.studentName = "Mahi Bansal";
     }
 
+    //getters and setters method
+    public String getStudentName() {
+        this.studentName = "Mahi Bansal";
+        return studentName;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
 }
