@@ -59,6 +59,13 @@ public class Book {
         this.bookAuthor = bookAuthor;
     }
 
+    public String getBookNumber() {
+        return bookNumber;
+    }
+
+    public void setBookNumber(String bookNumber) {
+        this.bookNumber = bookNumber;
+    }
 }
 
 
