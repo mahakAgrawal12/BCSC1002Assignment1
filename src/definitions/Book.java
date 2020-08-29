@@ -100,6 +100,11 @@ public class Book {
                 Objects.equals(getBookNumber(), book.getBookNumber());
     }
 
+    //the hashCode() method
+    @Override
+    public int hashCode() {
+        return Objects.hash(getBookName(), getBookAuthor(), getBookNumber());
+    }
 }
 
 
