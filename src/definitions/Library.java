@@ -49,4 +49,9 @@ public class Library {
         return Arrays.equals(getBooks(), library.getBooks());
     }
 
+    //the hashCode() method
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(getBooks());
+    }
 }
