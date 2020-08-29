@@ -15,7 +15,7 @@ public class FrontDesk {
 
     private static final int ADD_BOOK = 1;
     private static final int RETURN_BOOK = 2;
-    private static final int ISUUE_BOOK = 3;
+    private static final int SHOW_ISUUED_BOOK = 3;
     private static final int EXIT = 4;
 
     public static void main(String[] args) {
@@ -59,6 +59,15 @@ public class FrontDesk {
                     scanner.nextLine();
                     bookName = scanner.nextLine();
                     student.doReturn(bookName);
+                    System.out.println();
+                    break;
+                case SHOW_ISUUED_BOOK:
+                    System.out.println("Enter your name:");
+                    studentName = scanner.nextLine();
+                    System.out.println("Enter your university roll number:");
+                    studentUniversityRollNumber = scanner.nextLong();
+                    System.out.print("These are the books that you have issued: ");
+                    student.listOfIssuedBook();
                     System.out.println();
                     break;
             }
