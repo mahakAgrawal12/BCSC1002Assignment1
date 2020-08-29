@@ -7,6 +7,12 @@
 package definitions;
 
 public class Book {
+
+    private String bookName;
+    private String bookAuthor;
+    private String bookNumber;
+    private int bookId;
 }
+
 
 
