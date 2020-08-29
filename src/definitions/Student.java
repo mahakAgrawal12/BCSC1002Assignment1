@@ -42,4 +42,13 @@ public class Student {
     public void setUniversityRollNumber(long universityRollNumber) {
         this.studentUniversityRollNumber = studentUniversityRollNumber;
     }
+
+    public int getStudentIssueedBookNumber() {
+        return studentIssueedBookNumber;
+    }
+
+    public void setStudentIssueedBookNumber(int studentIssueedBookNumber) {
+        this.studentIssueedBookNumber = studentIssueedBookNumber;
+    }
+
 }
