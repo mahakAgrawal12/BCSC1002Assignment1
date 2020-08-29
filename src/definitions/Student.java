@@ -109,4 +109,13 @@ public class Student {
     public void doReturn(String name) {
         System.out.println("Thank you for returning, " + name + ". Hope you liked it!");
     }
+
+    /**
+     * This method shows a list of all the books that issued by student.
+     */
+    public void listOfIssuedBook() {
+        for (Book book : studentIssuedBookName) {
+            System.out.println(book);
+        }
+    }
 }
